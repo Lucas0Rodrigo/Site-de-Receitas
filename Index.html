@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Central de Receitas">
+		<meta name="author" content="Lucas Rodrigo">
+		<meta name="keywords" content="Receitas, Bolo, Sobremesas, Pratos Principais">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Receitas</title>
+		<link rel="icon" href="Imagens/Ico.png" type="image/png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-image: url('./Imagens/Fundo.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+			header {
+				background-color: #f0c8c8;
+				color: #000000;
+				text-align: center;
+				padding: 20px;
+				border-bottom: 10px solid #c3e0fa;
+			}
+
+			.centralizado {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				flex: 1;
+				background-color: transparent;
+			}
+
+			.link-receitas {
+				background-color: #f0c8c8;
+				color: #000;
+				font-size: 20px;
+				padding: 15px 25px;
+				border-radius: 8px;
+				text-decoration: none;
+				margin: 10px;
+				width: 250px;
+				text-align: center;
+				border: 2px solid #c3e0fa;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				transition: background-color 0.3s ease;
+			}
+
+			.link-receitas:hover {
+				background-color: #c3e0fa;
+				color: #000;
+			}
+
+			footer {
+				background-color: #f0c8c8;
+				color: #000000;
+				text-align: center;
+				padding: 10px;
+				width: 100%;
+				border-top: 5px solid #c3e0fa;
+				box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+				position: fixed;
+				bottom: 0;
+			}
+
+			.nome-receita {
+				font-family: 'Georgia', serif; 
+				font-size: 1.5em; 
+				margin: 10px 0;
+				text-align: center;
+			}
+
+			.descricao-receita {
+				font-family: 'Arial', sans-serif; 
+				font-size: 1em; 
+				color: #555;
+				text-align: center;
+				margin-bottom: 10px;
+				padding: 0 15px;
+			}
+
+			.receitas-container {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Receitas</h1>
+		</header>
+		<div class="receitas-container">
+			<div class="centralizado">
+				<a href="./Creme de Milho.html" class="link-receitas">
+					<img src="Imagens/Creme.png" width="200" height="200" style="border-radius: 5%;">
+					<h3 class="nome-receita">Creme de Milho</h3>
+					<p class="descricao-receita">Uma receita fácil e deliciosa de creme de milho, ideal para acompanhar suas refeições!</p>
+				</a>
+			</div>
+			<div class="centralizado">
+				<a href="./Bolo.html" class="link-receitas">
+					<img src="Imagens/Bolo.png" width="200" height="200" style="border-radius: 5%;">
+					<h3 class="nome-receita">Bolo de Chocolate</h3>
+					<p class="descricao-receita">Um bolo de chocolate fofinho e saboroso, perfeito para o café da tarde!</p>
+				</a>
+			</div>
+			<div class="centralizado">
+				<a href="./Pudim de Leite condenado.html" class="link-receitas">
+					<img src="./Imagens/Pudim2.png" width="200" height="200" style="border-radius: 5%;">
+					<h3 class="nome-receita">Pudim de Leite Condensado</h3>
+					<p class="descricao-receita">Um pudim de leite condenado facil de fazer, ideal para aquela sobremesa no almoço</p>
+				</a>
+			</div>
+		</div>
+		<footer>
+			Obrigado por usar o meu site! ;D
+		</footer>
+	</body>
+</html>
